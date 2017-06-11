@@ -7,13 +7,12 @@
 
 The current goal is just to experiment. I've got no experience in game development but a lot of web and functional programming experience. While this project is just a concept right now, I have an architecture in mind that will guide my initial tests. It is largely based on [redux](https://github.com/reactjs/redux).
 
-The goal is to have the whole engine transparent and pluggable.
-You mantain a single state object for your whole app.
-It is passed around between your various modules.
-All your modules must be named reducers.
-
-Your modules are composed together.
-Your modules may be altered by pluggable enhancers.
+- The goal is to have the whole engine transparent and pluggable.
+- You mantain a single state object for your whole app.
+- It is passed around between your various modules.
+- All your modules must be named reducers.
+- Your modules are composed together.
+- Your modules may be altered by pluggable enhancers.
 
 #### Quick start
 
@@ -61,7 +60,7 @@ Deals with it then returns the altered state so the loop continues.
 
 Normally, handling side effects like fetching resources on a functional loop should be avoided. But since this is so common we must define a standard so we can deal with this 'anti-pattern' in the most predictable way.
 
-One way to do this is to store a mutable object inside our immutable state. **WHAT?** Yes. We will have to deal with this object differently and none of it's changes will be apparent when comparing root states. But at least this way we can continue to deal with pure modules even when dealing with async sideeffects.
+One way to do this is to store a mutable object inside our immutable state. **WHAT?** Yes. We will have to deal with this object differently and none of it's changes will be apparent when comparing root states. But at least this way we can continue to deal with pure modules even when dealing with async side effects.
 
 Something like this:
 
