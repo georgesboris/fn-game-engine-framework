@@ -2,7 +2,7 @@ const flattenDeep = require('lodash/flattenDeep');
 
 function flattenModules(data) {
   return {
-    app: data.app,
+    state: data.state,
     modules: flattenDeep(modules)
   };
 }
@@ -17,8 +17,13 @@ function applyEnhancers(enhancers = []) {
 
 function mapModuleReducers(data) {
   return {
-    app: data.app,
-    modules: modules.map((m) => m.reducer)
+    ...data,
+    modules: modules.map((m) => (data) => {
+      return {
+        state: m.reducer(data.state, data.statePool),
+        statePool: data.statePool
+      };
+    })
   };
 }
 

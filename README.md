@@ -30,10 +30,10 @@ Due to our highly componentized structure, it's easy to imagine higher order fun
 
 const renderModule = {
   id: 'fn.render',
-  reducer: (app) => {
+  reducer: (state, statePool) => {
 
     return {
-      ...app,
+      ...state,
       rendered: true
     };
 
