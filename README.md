@@ -1,4 +1,4 @@
-# xogox go engine
+# xogo go engine
 > a functional javascript game engine
 
 ## Dev Log
