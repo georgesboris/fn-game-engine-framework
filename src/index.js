@@ -1,7 +1,7 @@
 const flow = require('lodash/flow');
 const utils = require('./utils');
 
-const defaultState = { __internal__: {} };
+const defaultState = { __xg__: {} };
 const defaultStatePool = [defaultState];
 const defaultData = {
   modules: [],
@@ -24,13 +24,13 @@ function loop(data) {
     statePool: data.statePool.concat(nextState).slice(0, data.poolSize)
   };
 
-  if (!nextData.state.__internal__.stop) {
+  if (!nextData.state.__xg__.stop) {
     requestAnimationFrame(() => loop(nextData));
   }
 
 }
 
-function internal(userData) {
+function xg(userData) {
 
   const data = {
     ...dataConfig,
@@ -47,4 +47,4 @@ function internal(userData) {
 
 }
 
-module.exports = internal;
+module.exports = xg;

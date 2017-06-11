@@ -1,21 +1,21 @@
 {
-  "name": "xogox-game-engine",
+  "name": "xg-game-engine-framework",
   "version": "0.0.1",
-  "description": "a functional javascript game engine",
+  "description": "a functional javascript game engine framework",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xogox/xogox-game-engine.git"
+    "url": "git+https://github.com/xogo-gaming/xg-game-framework-engine-framework.git"
   },
   "author": "Georges Boris",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xogox/xogox-game-engine/issues"
+    "url": "https://github.com/xogo-gaming/xg-game-framework-engine-framework/issues"
   },
-  "homepage": "https://github.com/xogox/xogox-game-engine#readme",
+  "homepage": "https://github.com/xogo-gaming/xg-game-framework-engine-framework#readme",
   "dependencies": {
     "jest": "^20.0.4",
     "lodash": "^4.17.4"

@@ -1,4 +1,4 @@
-# fn game engine framework
+# xg game engine framework
 > a functional javascript game engine framework
 
 The current goal is just to experiment. I've got no experience in game development but a lot of web and functional programming experience. While this project is just a concept right now, I have an architecture in mind that will guide my initial tests. It is largely based on [redux](https://github.com/reactjs/redux).
@@ -17,7 +17,10 @@ This is how an engine can be started up.
 ```javascript
 // ./src/engine.js
 
-go([ ...modules ])([ ...enhancers ]);
+xg({
+  modules: [ ...modules ],
+  [, enhancers: [ ...enhancers ]]
+});
 
 ```
 
