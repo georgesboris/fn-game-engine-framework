@@ -1,21 +1,21 @@
-# xogox go engine
+# fn game engine framework
 > a functional javascript game engine framework
 
 The current goal is just to experiment. I've got no experience in game development but a lot of web and functional programming experience. While this project is just a concept right now, I have an architecture in mind that will guide my initial tests. It is largely based on [redux](https://github.com/reactjs/redux).
 
-- The goal is to have the whole engine transparent and pluggable.
+- The goal is to have the whole framework transparent and pluggable.
 - You mantain a single state object for your whole app.
-- It is passed around between your various modules.
+- The state is passed around between your various modules.
 - All your modules must be named reducers.
 - Your modules are composed together.
 - Your modules may be altered by pluggable enhancers.
 
 #### Quick start
 
-This is how a game can be started up.
+This is how an engine can be started up.
 
 ```javascript
-// ./src/app.js
+// ./src/engine.js
 
 go([ ...modules ])([ ...enhancers ]);
 
@@ -29,7 +29,7 @@ Due to our highly componentized structure, it's easy to imagine higher order fun
 // ./src/modules/render
 
 const renderModule = {
-  id: 'xogo.render',
+  id: 'fn.render',
   reducer: (app) => {
 
     return {
