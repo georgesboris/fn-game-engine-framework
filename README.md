@@ -1,8 +1,6 @@
 # xogox go engine
 > a functional javascript game engine
 
---
-
 ## Dev Log
 
 ### 11/06/2017 - First setup
