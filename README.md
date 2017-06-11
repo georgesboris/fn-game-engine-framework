@@ -1,9 +1,5 @@
-# xogo go engine
-> a functional javascript game engine
-
-## Dev Log
-
-### 11/06/2017 - First setup
+# xogox go engine
+> a functional javascript game engine framework
 
 The current goal is just to experiment. I've got no experience in game development but a lot of web and functional programming experience. While this project is just a concept right now, I have an architecture in mind that will guide my initial tests. It is largely based on [redux](https://github.com/reactjs/redux).
 
@@ -75,7 +71,3 @@ Something like this:
    :
 
 ```
-
-#### Thoughts
-
-The choice of dealing with this in a proprietary way instead of doing things completely based on redux may not be the wisest choice. But I believe doing things with redux actions instead of sequential reducers will result in loss of performance. This should be tested more carefully.
