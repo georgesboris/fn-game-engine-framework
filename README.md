@@ -32,7 +32,7 @@ Due to our highly componentized structure, it's easy to imagine higher order fun
 // ./src/modules/render
 
 const renderModule = {
-  id: 'fn.render',
+  id: 'xg.render',
   reducer: (state, statePool) => {
 
     return {
